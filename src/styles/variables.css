@@ -1,11 +1,28 @@
 :root {
+/*
+  media querys */
+  --telefono: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  
   /* color */
-  --carrusel-btn-color: #ffffff57;
-  --carruselon-btn-color: #ffffff;
-  --font-color-blanco:#ffffff;
+    --primario-background: #FFFFFF;
+    --primario-headings: #2E2B25;
+    --primario-paragraphs: #2E2B25;
+    --primario-details: #C3C5B4;
+    --accent-background: #F5F3F0;
+    --accent-headings: #2E2B25;
+    --accent-paragraphs: #2E2B25;
+    --accent-details: #D7B9A2;
+    --button-background: #A07656;
+    --button-background-hover: #80826B;
 
+    --blanco: #FFFFFF;
   /* font */
 
-  --font-titulos: 'izmir', sans-serif;
-  --font-links: 'lato', sans-serif;
+  --fuente-principal: 'izmir', sans-serif;
+  --fuente-links: 'lato', sans-serif;
+
+
+  --separacion: 5rem;
 }

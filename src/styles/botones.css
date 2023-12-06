@@ -23,5 +23,5 @@
 }
 
 .boton-carusel.active {
-  background-color: var(--carruselon-btn-color); /* Corregir el nombre de la variable */
+  background-color: var(--blanco); /* Corregir el nombre de la variable */
 }

@@ -1,0 +1,51 @@
+/* Estilos para el icono del menú hamburguesa */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Ajusta la posición a la derecha según sea necesario */
+}
+
+.menu-icon-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--blanco);
+  transition: all 0.3s ease;
+}
+
+.menu-icon-line.open:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-icon-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon-line.open:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Estilos para pantallas más grandes (PC) */
+@media (min-width: 1025px) {
+  .menu-icon {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+/* Estilos para tablet y teléfono (menú hamburguesa) */
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .menu.show {
+    display: block;
+  }
+}
