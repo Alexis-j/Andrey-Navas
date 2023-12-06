@@ -18,7 +18,7 @@ export default function Header() {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 10000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -33,7 +33,7 @@ export default function Header() {
             backgroundImage: `url(${image})`,
             opacity: index === currentImageIndex ? 1 : 0,
           }}
-        />
+          />
       ))}
       <div className="botones-container">
         <button className={`boton-carusel ${currentImageIndex === 0 ? 'active' : ''}`} onClick={() => changeImage(0)}></button>
