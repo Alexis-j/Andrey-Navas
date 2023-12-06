@@ -1,3 +1,5 @@
+// header.jsx
+
 import React, { useState, useEffect } from 'react';
 import '../styles/botones.css';
 import '../styles/header.css';
@@ -40,6 +42,14 @@ export default function Header() {
         <button className={`boton-carusel ${currentImageIndex === 1 ? 'active' : ''}`} onClick={() => changeImage(1)}></button>
         <button className={`boton-carusel ${currentImageIndex === 2 ? 'active' : ''}`} onClick={() => changeImage(2)}></button>
       </div>
+      <nav className="additional-links">
+        <ul>
+          <li><a href="/about">About Me</a></li>
+          <li><a href="/contact">Wild Life</a></li>
+          <li><a href="/contact">Landscape</a></li>
+          <li><a href="/contact">People</a></li>
+        </ul>
+      </nav>
     </header>
   );
 }

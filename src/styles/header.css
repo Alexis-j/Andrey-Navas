@@ -1,3 +1,5 @@
+/* header.css */
+
 .header-container {
   width: 100%;
   height: 100vh;
@@ -22,3 +24,40 @@
 .header-image.active {
   opacity: 1;
 }
+
+/* Ajustes para los enlaces */
+.additional-links {
+  position: relative;
+  z-index: 1; /* Para que estén por encima de las imágenes */
+  text-align: right; /* Centrar los enlaces */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.additional-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additional-links ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: bold;
+  font-family: var(--font-links);
+}
+.additional-links ul li:hover {
+  transform: scale(1.2); /* Aumentar la escala al pasar el ratón */
+}
+
+
+.additional-links ul li a {
+  text-decoration: none;
+  color: var(--font-color-blanco); /* Color del texto */
+}
+
+/* .header-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--font-color-blanco);
+} */

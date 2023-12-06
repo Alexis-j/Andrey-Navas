@@ -1,5 +1,11 @@
 :root {
+  /* color */
   --carrusel-btn-color: #ffffff57;
   --carruselon-btn-color: #ffffff;
-  /* ...otras variables de color u otras variables... */
+  --font-color-blanco:#ffffff;
+
+  /* font */
+
+  --font-titulos: 'izmir', sans-serif;
+  --font-links: 'lato', sans-serif;
 }
