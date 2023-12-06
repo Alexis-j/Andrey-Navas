@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/botones.css';
+import '../styles/header.css';
 import hero1 from '../img/hero1.jpg';
 import hero2 from '../img/hero2.jpg';
 import hero3 from '../img/hero3.jpg';
@@ -23,23 +24,18 @@ export default function Header() {
   }, [images.length]);
 
   return (
-    <header style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+    <header className="header-container">
       {images.map((image, index) => (
-        <img
+        <div
           key={index}
-          src={image}
-          alt={`Imagen ${index + 1}`}
+          className={`header-image ${index === currentImageIndex ? 'active' : ''}`}
           style={{
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            objectFit: 'cover',
+            backgroundImage: `url(${image})`,
             opacity: index === currentImageIndex ? 1 : 0,
-            transition: 'opacity 4s ease-in-out',
           }}
         />
       ))}
-      <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)' }}>
+      <div className="botones-container">
         <button className={`boton-carusel ${currentImageIndex === 0 ? 'active' : ''}`} onClick={() => changeImage(0)}></button>
         <button className={`boton-carusel ${currentImageIndex === 1 ? 'active' : ''}`} onClick={() => changeImage(1)}></button>
         <button className={`boton-carusel ${currentImageIndex === 2 ? 'active' : ''}`} onClick={() => changeImage(2)}></button>

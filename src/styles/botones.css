@@ -1,17 +1,25 @@
 @import 'variables.css';
 
+.botones-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Agrega aquí cualquier estilo adicional que necesites para este contenedor */
+}
+
 .boton-carusel {
   width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  background-color: var(--carrusel-btn-color); /* Utiliza la variable de color */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  transition: background-color 0.3s ease; /* Agrega una transición al color de fondo */
-  opacity: 0.8; /* Define la transparencia del botón */
-  margin: 0 2px
+  height: 15px;
+  border: 2px solid white; /* Ajusta el tamaño y el color del borde */
+  border-radius: 50%;
+  background-color: transparent; /* Establece el color de fondo como transparente */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.8;
+  margin: 0 2px;
 }
 
 .boton-carusel.active {
-  background-color: var(--carruselon-btn-color); 
+  background-color: var(--carruselon-btn-color); /* Corregir el nombre de la variable */
 }
