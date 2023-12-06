@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/botones.css';
 import '../styles/header.css';
-import hero1 from '../img/hero1.jpg';
-import hero2 from '../img/hero2.jpg';
-import hero3 from '../img/hero3.jpg';
+import hero1 from '../img/hero1.png';
+import hero2 from '../img/hero2.png';
+import hero3 from '../img/hero3.png';
 
 export default function Header() {
   const [images, setImages] = useState([hero1, hero2, hero3]);
