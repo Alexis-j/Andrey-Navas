@@ -1,0 +1,17 @@
+@import 'variables.css';
+
+.boton-carusel {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  background-color: var(--carrusel-btn-color); /* Utiliza la variable de color */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Agrega una transición al color de fondo */
+  opacity: 0.8; /* Define la transparencia del botón */
+  margin: 0 2px
+}
+
+.boton-carusel.active {
+  background-color: var(--carruselon-btn-color); 
+}
