@@ -35,17 +35,47 @@
   .menu-icon {
     display: none;
   }
-  .menu {
-    display: block;
-  }
 }
 
 /* Estilos para tablet y teléfono (menú hamburguesa) */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .menu {
     display: none;
   }
   .menu.show {
     display: block;
   }
+}
+
+/* Estilos para PC */
+@media (min-width: 1025px) {
+  .additional-links {
+    text-align: right; /* Mantener los enlaces alineados a la derecha en PC */
+  }
+
+  .additional-links ul {
+    padding: 0;
+  }
+
+  .additional-links ul li {
+    display: inline-block; /* Mantener los enlaces en línea en PC */
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: var(--font-links);
+  }
+
+  .additional-links ul li:hover {
+    transform: scale(1.2); /* Aumentar la escala al pasar el ratón */
+  }
+
+  .additional-links ul li a {
+    text-decoration: none;
+    color: var(--blanco); /* Color del texto */
+  }
+}
+/* Resto de tu CSS */
+
+.additional-links ul li a {
+  text-decoration: none;
+  color: var(--blanco); /* Color del texto */
 }
