@@ -1,7 +1,19 @@
 .footer {
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-links);
+  text-align: center;
+}
+
+/* Estilos para tablet y teléfono */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .design {
+    margin-bottom: 5px; /* Ajusta el espacio entre líneas */
+  }
 }
