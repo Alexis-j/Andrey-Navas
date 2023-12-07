@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/navbar.css';
+import '../../styles/navbar.css';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
