@@ -1,14 +1,14 @@
+import '../../../styles/header.css';
+import '../../../styles/botones.css';
+
 // header.jsx
-import React, { useState, useEffect } from 'react';
-import '../../styles/botones.css';
-import '../../styles/header.css';
+import React, { useEffect, useState } from 'react';
 
+import Logo from '../Logo'
 import Navbar from './Navbar';
-import Logo from './Logo'
-
-import hero1 from '../../img/img-hero/hero1.png';
-import hero2 from '../../img/img-hero/hero2.png';
-import hero3 from '../../img/img-hero/hero3.png';
+import hero1 from '../../../img/img-hero/hero1.png';
+import hero2 from '../../../img/img-hero/hero2.png';
+import hero3 from '../../../img/img-hero/hero3.png';
 
 export default function Header() {
   const [images, setImages] = useState([hero1, hero2, hero3]);

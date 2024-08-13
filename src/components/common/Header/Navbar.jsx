@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import '../../styles/navbar.css';
+import '../../../styles/navbar.css';
+
+import React, { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
